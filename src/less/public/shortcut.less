@@ -1,0 +1,60 @@
+@shortcut-bg               : #000;
+@shortcut-color            : #9d9e9d;
+@shortcut-font-family      : 'simsun';
+@shortcut-font-size        : 12px;
+@shortcut-height           : 40px;
+@shortcut-line-height      : @line-height-base;
+@shortcut-link-color       : @shortcut-color;
+@shortcut-link-hover-color : @primary-color;
+@shortcut-spacer-height    : 10px;
+
+.shortcut {
+  height: @shortcut-height;
+  background-color: @shortcut-bg;
+  font-size: @shortcut-font-size;
+  line-height: @shortcut-line-height;
+  color: @shortcut-color;
+  position: relative;
+  font-family: @shortcut-font-family;
+
+  .clr();
+  
+  .welcome-text {
+    display: inline-block;
+    padding-top: (@shortcut-height - (@shortcut-font-size * @shortcut-line-height)) / 2;
+
+    .text-overflow();
+  }
+
+  .user-info {
+    float: right;
+    margin-top: (@shortcut-height - (@shortcut-font-size * @shortcut-line-height)) / 2;
+
+    .clr();
+    
+    li {
+      float: left;
+      margin-left: 8px;
+
+      &.spacer {
+        width: 1px;
+        height: @shortcut-spacer-height;
+        background: #ccc;
+        position: relative;
+        top: ((@shortcut-font-size * @shortcut-line-height) - @shortcut-spacer-height) / 2;
+      }
+
+      a {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  a {
+    color: @shortcut-link-color;
+
+    &:hover {
+      color: @shortcut-link-hover-color;
+    }
+  }
+}
