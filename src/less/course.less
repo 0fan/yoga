@@ -1,0 +1,136 @@
+@import './public/index.less';
+
+.intro-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.intro-text {
+  text-indent: 2em;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.intro-list {
+  margin: 8px 0;
+}
+
+.course-filter {
+  margin-bottom: 14px;
+}
+
+.course-curriculum-title{
+  .clr();
+  margin-bottom: 12px;
+}
+
+.course-box {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.course-curriculum-title .course-curriculum-item {
+  float: left;
+  width: 14.285714285714295%;
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+  color: #fff;
+  background: #666;
+  font-size: 18px;
+  cursor: pointer;
+  // border-radius: 3px;
+  transition: all .3s;
+}
+.course-curriculum-title .course-curriculum-item:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.course-curriculum-title .course-curriculum-item + .course-curriculum-item + .course-curriculum-item + .course-curriculum-item + .course-curriculum-item + .course-curriculum-item + .course-curriculum-item {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.course-curriculum-title .course-curriculum-item:hover,
+.course-curriculum-title .course-curriculum-item.active {
+  background: #36a737;
+}
+.course-curriculum-content {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 600px;
+}
+.course-curriculum-box {
+  display: none;
+  visibility: hidden;
+}
+.course-curriculum-box.active {
+  display: block;
+  visibility: visible;
+}
+.course-curriculum-box > ul {
+  margin-right: -1px;
+  margin-bottom: -1px;
+  overflow: hidden;
+}
+.course-curriculum-box > ul > li{
+  padding-right: 1px;
+  padding-bottom: 1px;
+  float: left;
+  width: 20%;
+  box-sizing: border-box;
+}
+.course-curriculum-box .course-curriculum-item {
+  height: 250px;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  transition: background-color .3s;
+}
+.course-curriculum-box .course-curriculum-item:hover {
+  background-color: #e6e6e6;
+}
+.course-curriculum-icon {
+  width: 64px;
+  height: 64px;
+  background: url('../img/course-item-icon-1.png') no-repeat center center;
+  background-size: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.course-curriculum-time {
+  margin: auto;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  background: #36a737;
+  color: #fff;
+  width: 118px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin-bottom: 10px;
+
+  .text-overflow();
+}
+.course-curriculum-address {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.course-curriculum-name {
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

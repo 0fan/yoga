@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/vendor.css">
+  <link rel="stylesheet" href="./css/course.css">
+
+</head>
+<body>
+  @@include("header.html", { "active": 1 })
+  @@include("focus-inner.html")
+  <div class="info-box">
+    <div class="container">
+      <div class="info-box-title">会馆课程</div>
+      <div class="info-box-sub-title">Hall&Course</div>
+      <div class="info-box-spacer"></div>
+      <div class="row">
+        <div class="col-xs-24 col-md-12">
+          <div class="intro-title">禅瑜院瑜伽会馆</div>
+          <p class="intro-text">禅瑜院瑜伽学院教提供私人瑜伽教练针对客户需求进行一对一教学培训服务，让零基础的学员胜在起跑线上。同时，我们安排多样化自选课程，为客户根据自身需求制定的课程。近年来，禅瑜院推出多种活动，如：舞蹈、茶道、太极、插花，禅坐等特色项目。客户可通过学习培养个人气质，提升个人形象，为您的人生锦上添花！</p>
+          <div class="row intro-list no-gutter">
+            <div class="col-md-4"><strong>地址:</strong></div>
+            <div class="col-md-20">北京市朝阳区西大望路3号蓝堡国际中心2座16楼</div>
+          </div>
+          <div class="row intro-list no-gutter">
+            <div class="col-md-4"><strong>乘车路线:</strong></div>
+            <div class="col-md-20">北京市朝阳区西大望路3号蓝堡国际中心2座16楼（地铁一号线有两个出口：大望路A口的西北口出（A口一共有3个出口）向北200米即到或E出口。地铁14号线大望路E口 出口即到）备注：从一层蓝堡咖啡厅旁乘电梯上16层</div>
+          </div>
+          <div class="row intro-list no-gutter">
+            <div class="col-md-4"><strong>预约电话:</strong></div>
+            <div class="col-md-20">010-8888 8888</div>
+          </div>
+        </div>
+        <div class="col-xs-24 col-md-12">
+          <img src="./img/course-intro.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="course-box">
+    <div class="container">
+      <div class="course-filter">
+        <div class="row">
+          <div class="col-xs-24 col-md-24">
+            <div class="form-inline">
+              <div class="form-group">
+                <label>筛选：</label>
+                <input type="text" class="form-control" id="datetimepicker">
+              </div>              
+            </div>
+          </div>
+        </div>        
+      </div>
+      <div class="course-curriculum">
+        <div class="course-curriculum-title">
+          <div class="course-curriculum-item active"><span>星期一</span></div>
+          <div class="course-curriculum-item"><span>星期二</span></div>
+          <div class="course-curriculum-item"><span>星期三</span></div>
+          <div class="course-curriculum-item"><span>星期四</span></div>
+          <div class="course-curriculum-item"><span>星期五</span></div>
+          <div class="course-curriculum-item"><span>星期六</span></div>
+          <div class="course-curriculum-item"><span>星期天</span></div>
+        </div>
+        <div class="course-curriculum-content">
+          <div class="course-curriculum-box active"> <!-- 星期一 -->
+            <ul class="course-curriculum-wrap">
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="course-curriculum-box"> <!-- 星期二 -->
+            <ul class="course-curriculum-wrap">
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="course-curriculum-box"> <!-- 星期三 -->
+            <ul class="course-curriculum-wrap">
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="course-curriculum-box"> <!-- 星期四 -->
+            <ul class="course-curriculum-wrap">
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="course-curriculum-box"> <!-- 星期五 -->
+            <ul class="course-curriculum-wrap">
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="course-curriculum-box"> <!-- 星期六 -->
+            <ul class="course-curriculum-wrap">
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="course-curriculum-box"> <!-- 星期天 -->
+            <ul class="course-curriculum-wrap">
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+              <li>
+                <div class="course-curriculum-item">
+                  <div class="course-curriculum-icon _1"></div>
+                  <div class="course-curriculum-time">7:00AM-9:AM</div>
+                  <div class="course-curriculum-address">蓝堡会馆</div>
+                  <div class="course-curriculum-name">向东海</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include("footer.html")
+</body>
+<script src="./js/vendor.js"></script>
+<script src="./js/course.js"></script>
+</html>

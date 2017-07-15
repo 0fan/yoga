@@ -28,7 +28,8 @@ gulp.task('html', () => {
     gulp.src('./src/html/*.html')
         .pipe(fileInclude({
           prefix: '@@',
-          basepath: './src/html/public/'
+          basepath: './src/html/public/',
+          context: {active: 0}
         }))
         .pipe(gulp.dest('./dist/'))
         .pipe(connect.reload())
@@ -41,6 +42,8 @@ gulp.task('jsVendor', () => {
     gulp.src([
           './src/js/vendor/jquery-1.9.1.min.js',
           './src/js/vendor/bootstrap.min.js',
+          './src/js/vendor/bootstrap-datepicker.min.js',
+          './src/js/vendor/bootstrap-datepicker.zh-CN.min.js',
           './src/js/vendor/jquery.validate.min.js',
           './src/js/vendor/jquery.mCustomScrollbar.concat.min.js',
           './src/js/vendor/layer.js',
