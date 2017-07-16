@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/vendor.css">
+  <link rel="stylesheet" href="./css/article-detail.css">
+
+</head>
+<body>
+  @@include('header.html', { "active": 5  })
+  @@include('focus-inner.html')
+  <div class="container">
+
+    <ol class="breadcrumb article-breadcrumb">
+      <li><a href="./article.html">图片文章</a></li>
+      <li class="active">山西首届瑜伽达人赛海选进行中</li>
+    </ol>
+
+    <div class="article-detail">
+      <h3>山西首届瑜伽达人赛海选进行中</h3>
+      <div class="article-explan">
+        <div class="article-explan-item">
+          发表时间<span>2017-03-01 17:26:03</span>
+        </div>
+      </div>
+      <div class="article-content">
+        <p>歌手林凡身形纤细，原来她从小就爱运动，学习彼拉提斯5、6年时间后，现在也爱上瑜伽。肤质偏干的她非常喜欢搜集身体乳囤货，身体乳的各种香气也让她着迷。林凡的脸部肌肤看来非常细致，她笑说自己爱漂亮，但也很爱素颜出门。妆前她会敷脸降低浮粉机率，卸睫毛膏时还会用棉花棒一根一根卸除以免残留。</p>
+        <p>林凡爱漂亮，但也常素颜出门，她认为女生看起来气色好、干干净净最重要。林凡平时若工作不忙，每周会做2天瑜伽、上2次健身房。在饮食控制上，她说晚餐尽量先喝汤、并少吃淀粉类、以蔬菜取代米饭等等，都是她饮食控制的方法。另外含糖的饮料几乎都不喝，偏好无糖的绿茶等，饮食也帮助她维持曼妙好身材。</p>
+      </div>
+    </div>
+  </div>
+  @@include('footer.html')
+</body>
+<script src="./js/vendor.js"></script>
+<script src="./js/article-detail.js"></script>
+</html>

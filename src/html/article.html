@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/vendor.css">
+  <link rel="stylesheet" href="./css/article.css">
+
+</head>
+<body>
+  @@include('header.html', { "active": 5  })
+  @@include('focus-inner.html')
+
+  <div class="info-box">
+    <div class="container">
+      <div class="info-box-title">图片文章</div>
+      <div class="info-box-sub-title">Image article</div>
+      <div class="info-box-spacer"></div>
+      <div class="article-wrap">
+        <a href="./article-detail.html" class="article-item">
+          <div class="article-preview"><img src="./img/article-temp-1.png"></div>
+          <div class="article-main">
+            <div class="article-title">善待自己和他人</div>
+            <div class="article-intro">瑜伽（英文：Yoga，印地语：योग）是一个汉语词汇，最早是从印度梵语“yug”或“yuj”而来，其含意为“一致”、“结合”或“和谐”。瑜伽源于古印度，是古印度六大哲学派别中的一系，探寻“梵我合一”的道理与方法。而现代人所称的瑜伽则是主要是一系列的修身养心方法。</div>
+          </div>            
+        </a>
+        <a href="./article-detail.html" class="article-item">
+          <div class="article-preview"><img src="./img/article-temp-1.png"></div>
+          <div class="article-main">
+            <div class="article-title">善待自己和他人</div>
+            <div class="article-intro">瑜伽（英文：Yoga，印地语：योग）是一个汉语词汇，最早是从印度梵语“yug”或“yuj”而来，其含意为“一致”、“结合”或“和谐”。瑜伽源于古印度，是古印度六大哲学派别中的一系，探寻“梵我合一”的道理与方法。而现代人所称的瑜伽则是主要是一系列的修身养心方法。</div>
+          </div>            
+        </a>
+        <a href="./article-detail.html" class="article-item">
+          <div class="article-preview"><img src="./img/article-temp-1.png"></div>
+          <div class="article-main">
+            <div class="article-title">善待自己和他人</div>
+            <div class="article-intro">瑜伽（英文：Yoga，印地语：योग）是一个汉语词汇，最早是从印度梵语“yug”或“yuj”而来，其含意为“一致”、“结合”或“和谐”。瑜伽源于古印度，是古印度六大哲学派别中的一系，探寻“梵我合一”的道理与方法。而现代人所称的瑜伽则是主要是一系列的修身养心方法。</div>
+          </div>            
+        </a>
+      </div>
+      <div class="article-pagination">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default">上一页</button>
+          <button type="button" class="btn btn-default">1</button>
+          <button type="button" class="btn btn-default">2</button>
+          <button type="button" class="btn btn-default">3</button>
+          <button type="button" class="btn btn-default">下一页</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('footer.html')
+</body>
+<script src="./js/vendor.js"></script>
+<script src="./js/article.js"></script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/vendor.css">
+  <link rel="stylesheet" href="./css/introduce.css">
+
+</head>
+<body>
+  @@include('header.html', { "active": 3  })
+  @@include('focus-inner.html')
+
+  <div class="info-box">
+    <div class="container">
+      <div class="info-box-title">场馆介绍</div>
+      <div class="info-box-sub-title">Introduction</div>
+      <div class="info-box-spacer"></div>
+      <div class="row no-gutter">
+        <div class="col-md-10">
+          <div class="introduce-preview">
+            <img src="./img/introduce-temp-2.png">
+            <div class="introduce-preview-title">瑜伽训练区</div>
+          </div>
+        </div>
+        <div class="col-md-14">
+          <div class="row no-gutter">
+            <div class="col-md-8 introduce-preview-item active" title="瑜伽训练区">
+              <img src="./img/introduce-temp-2.png">
+            </div>
+            <div class="col-md-8 introduce-preview-item" title="瑜伽训练区1">
+              <img src="./img/introduce-temp-3.png">
+            </div>
+            <div class="col-md-8 introduce-preview-item" title="瑜伽训练区2">
+              <img src="./img/introduce-temp-4.png">
+            </div>
+            <div class="col-md-8 introduce-preview-item" title="瑜伽训练区3">
+              <img src="./img/introduce-temp-5.png">
+            </div>
+            <div class="col-md-8 introduce-preview-item" title="瑜伽训练区4">
+              <img src="./img/introduce-temp-6.png">
+            </div>
+            <div class="col-md-8 introduce-preview-item" title="瑜伽训练区5">
+              <img src="./img/introduce-temp-7.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="introduce-info">
+        <h3>禅瑜院瑜伽简介</h3>
+        <p>禅瑜院瑜伽学院成立于2014年8月，以瑜伽教学与培训为核心。禅瑜院瑜伽（中国）面向全国招生，核心区域坐落于嘉兴市南湖会景园勺园景区，禅院四周风景秀丽，独特的恬静氛围，吸引了众多高级会员。</p>
+      </div>
+    </div>
+  </div>
+
+  @@include('footer.html')
+</body>
+<script src="./js/vendor.js"></script>
+<script src="./js/introduce.js"></script>
+</html>

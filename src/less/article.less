@@ -1,0 +1,72 @@
+@import './public/index.less';
+
+.article-item {
+  display: block;
+  padding: 20px;
+  background-color: transparent;
+  transition: all .3s;
+  border-top: 1px solid #dfdfdf;
+
+  .clr();
+
+  &:hover {
+    background-color: #f4f4f4;
+
+    .article-title,
+    .article-intro {
+      color: @primary-color;
+    }
+  }
+
+  &:first-child  {
+    border-top: none;
+  }
+}
+
+.article-preview {
+  float: left;
+  width: 230px;
+  height: 150px;
+  background-color: #ddd;
+  overflow: hidden;
+
+  > img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.article-main {
+  margin-left: 230px;
+  padding-left: 20px;
+}
+
+.article-title {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 12px;
+
+  .text-overflow();
+}
+
+.article-intro {
+  line-height: 1.5;
+  color: #666;
+}
+
+.article-pagination {
+  margin: 48px 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .article-preview {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .article-main {
+    margin: 0;
+    padding: 0;
+  }
+}

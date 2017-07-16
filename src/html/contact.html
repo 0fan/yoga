@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/vendor.css">
+  <link rel="stylesheet" href="./css/contact.css">
+
+</head>
+<body>
+  @@include('header.html', { "active": 6  })
+  @@include('focus-inner.html')
+
+  <div class="info-box">
+    <div class="container">
+      <div class="info-box-title">联系我们</div>
+      <div class="info-box-sub-title">Contact us</div>
+      <div class="info-box-spacer"></div>
+      <div class="row">
+        <div class="col-xs-24 col-md-12">
+          <h3>您好HELLO!</h3>
+          <p class="contact-sub-title">感谢您来到禅瑜院瑜伽，若您有学习意向，请您为我们留言或使用以下方式联系我们，我们将尽快给你回复，并为您提供最真诚的培训服务，谢谢。</p>
+          <div class="row no-gutter contact-item">
+            <div class="col-md-4"><strong>地址:</strong></div>
+            <div class="col-md-20">杭州市大兴区科苑路19号</div>
+          </div>
+          <div class="row no-gutter contact-item">
+            <div class="col-md-4"><strong>咨询电话:</strong></div>
+            <div class="col-md-20">马老师15245215614     董老师18574745652</div>
+          </div>
+          <div class="row no-gutter contact-item">
+            <div class="col-md-4"><strong>邮箱:</strong></div>
+            <div class="col-md-20">yujia@yujia.com</div>
+          </div>
+          <div class="row no-gutter contact-item">
+            <div class="col-md-4"><strong>乘车路线:</strong></div>
+            <div class="col-md-20">地铁4号线在高米店南站下车C口出，步行290米到达高米店南站公交 站，乘坐兴11路或专24路等（五站地左右）在福苑东区下车向西100米 路北即到！</div>
+          </div>
+          <div class="qr-code">
+            <img src="./img/qr-code.png">
+            <span>扫一扫，关注我们</span>
+          </div>
+        </div>
+        <div class="col-xs-24 col-md-12">
+          <form>
+            <div class="form-group">
+              <label>姓名</label>
+              <input type="email" class="form-control" autocomplete="off" placeholder="姓名 Name">
+            </div>
+            <div class="form-group">
+              <label>电话</label>
+              <input type="email" class="form-control" autocomplete="off" placeholder="电话 Tel">
+            </div>
+            <div class="form-group">
+              <label>留言</label>
+              <textarea class="form-control" rows="3" autocomplete="off" placeholder="留言 Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success pull-right">提交</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('footer.html')
+</body>
+<script src="./js/vendor.js"></script>
+<script src="./js/contact.js"></script>
+</html>

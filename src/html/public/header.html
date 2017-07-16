@@ -10,53 +10,105 @@
     <a href="#" class="header-logo"></a>
     <ul id="menu" class="menu collapse navbar-collapse" aria-expanded="false">
       <li>
-        <a href="#" @@if (active === 0) { class="active" }>
+        <a href="./index.html" @@if (active === 0) { class="active" }>
           <span class="menu-text">网站首页</span>
           <span class="menu-sub-text">Home</span>
         </a>
       </li>
       <li>
-        <a href="#" @@if (active === 1) { class="active" }>
+        <a href="./course.html" @@if (active === 1) { class="active" }>
           <span class="menu-text">会馆课程</span>
           <span class="menu-sub-text">Hall&Course</span>
         </a>
       </li>
       <li>
-        <a href="#" @@if (active === 2) { class="active" }>
+        <a href="./teacher.html" @@if (active === 2) { class="active" }>
           <span class="menu-text">禅瑜院教练</span>
-          <span class="menu-sub-text">Yoga instructor</span>
+          <span class="menu-sub-text">teacher</span>
         </a>
       </li>
       <li>
-        <a href="#" @@if (active === 3) { class="active" }>
+        <a href="./introduce.html" @@if (active === 3) { class="active" }>
           <span class="menu-text">场馆介绍</span>
           <span class="menu-sub-text">Introduction</span>
         </a>
       </li>
       <li>
-        <a href="#" @@if (active === 4) { class="active" }>
+        <a href="./video.html" @@if (active === 4) { class="active" }>
           <span class="menu-text">瑜伽视频</span>
           <span class="menu-sub-text">Yoga video</span>
         </a>
       </li>
       <li>
-        <a href="#" @@if (active === 5) { class="active" }>
+        <a href="./article.html" @@if (active === 5) { class="active" }>
           <span class="menu-text">图片文章</span>
           <span class="menu-sub-text">Image article</span>
         </a>
       </li>
       <li>
-        <a href="#" @@if (active === 6) { class="active" }>
+        <a href="./contact.html" @@if (active === 6) { class="active" }>
           <span class="menu-text">联系我们</span>
           <span class="menu-sub-text">Contact us</span>
         </a>
       </li>
       <li>
-        <a href="#" @@if (active === 7) { class="active" }>
+        <a href="./certificate.html" @@if (active === 7) { class="active" }>
           <span class="menu-text">查询证书</span>
           <span class="menu-sub-text">Certificate</span>
         </a>
       </li>
     </ul>
+  </div>
+</div>
+
+<!-- login modal -->
+<div class="modal login-modal" id="login-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="login-modal-title">登录</div>
+        <form>
+          <div class="form-group">
+            <input type="text" class="input-lg form-control" autocomplete="off" placeholder="用户名">
+          </div>
+          <div class="form-group">
+            <input type="password" class="input-lg form-control" autocomplete="off" placeholder="请输入密码">
+          </div>
+          <div class="form-group text-right login-modal-forget">
+            <a href="">忘记密码？</a>
+          </div>
+          <button type="submit" class="btn btn-success btn-block btn-lg">登录</button>
+          <div class="form-group text-right login-modal-reg">
+            <span>还没有账号？<a href="#" data-dismiss="modal" data-toggle="modal" data-target="#reg-modal">立即注册</a></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- login modal -->
+<div class="modal login-modal" id="reg-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="login-modal-title">注册</div>
+        <form>
+          <div class="form-group">
+            <input type="text" class="input-lg form-control" autocomplete="off" placeholder="用户名">
+          </div>
+          <div class="form-group">
+            <input type="password" class="input-lg form-control" autocomplete="off" placeholder="请输入密码">
+          </div>
+          <div class="form-group">
+            <input type="password" class="input-lg form-control" autocomplete="off" placeholder="再次输入密码">
+          </div>
+          <button type="submit" class="btn btn-success btn-block btn-lg">注册</button>
+          <div class="form-group text-right login-modal-reg">
+            <span>已有账号?<a href="#" data-dismiss="modal"  data-toggle="modal" data-target="#login-modal">直接登录</a></span>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 </div>

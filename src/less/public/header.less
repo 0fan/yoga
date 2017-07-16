@@ -92,6 +92,45 @@
   }
 }
 
+/* login-modal */
+.login-modal .modal-content{
+  border-radius: 0;
+  border: 15px solid #3b3b3c;
+  border-color: rgba(0,0,0,.5);
+  padding: 40px 65px 20px;
+}
+
+.login-modal-title {
+  font-size: 24px;
+  letter-spacing: 1em;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.login-modal-forget {
+  margin-top: 24px;
+}
+
+.login-modal-reg {
+  margin-top: 34px;
+  color: #666;
+
+  a {
+    color: @primary-color;
+    font-size: 16px;
+  }
+}
+
+.login-modal .input-lg {
+  font-size: 14px;
+}
+
+.login-modal .form-control,
+.login-modal .btn {
+  border-radius: 4px;
+}
+/* /login-modal */
+
 @media (max-width: 768px) {
   .menu {
     margin-top: 0;
@@ -133,6 +172,14 @@
   .menu>li>a:hover:before {
     display: none;
   }
+
+  .login-modal .modal-dialog {
+    width: auto;
+  }
+
+  .login-modal .modal-content {
+    padding: 0;
+  }
 } 
 
 @media (min-width: 768px) {
@@ -143,4 +190,10 @@
     margin-right: -12px;
     margin-left: -12px;
   }
+
+  .login-modal .modal-dialog {
+    margin-top: 120px;
+    width: 482px;
+  }
+
 }

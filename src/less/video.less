@@ -1,0 +1,75 @@
+@import './public/index.less';
+
+.video-player {
+  height: 600px;
+  position: relative;
+  background-color: #bbb;
+  margin-bottom: 24px;
+}
+
+.video-item {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 24px;
+  cursor: pointer;
+
+  &.active:before {
+    content: '正在播放中...';
+    line-height: 200px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    z-index: 9999;
+    background-color: #000;
+    background-color: rgba(0,0,0,.6);
+  }
+}
+
+.video-preview {
+  height: 100%;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.video-info {
+  position: absolute;
+  height: 32px;
+  line-height: 32px;
+  background-color: #000;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 12px;
+
+}
+
+.video-info-title {
+  float: left;
+  width: 50%;
+
+  .text-overflow();
+}
+
+.video-info-time {
+  float: right;
+  width: 50%;
+  text-align: right;
+
+  .text-overflow();
+}
+
+.video-pagination {
+  margin: 48px 0;
+  text-align: center;
+}
