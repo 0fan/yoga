@@ -400,7 +400,7 @@
 }
 .video .video-list {
   background: #fff;
-  padding-left: 35px;
+  padding-left: 20px;
   padding-right: 20px;
   height: 500px;
   overflow-x: hidden;
@@ -408,13 +408,11 @@
 }
 .video .video-list .video-item{
   display: block;
-  padding: 20px 0 20px 20px;
+  padding: 20px 0 20px;
   border-top: 1px dotted #e6e6e6;
   overflow: hidden;
 }
-.video .video-list .video-item:hover {
-  color: #36a737;
-}
+
 .video .video-list .video-item:first-child{
   border-bottom: none;
 }
@@ -455,6 +453,11 @@
 }
 .video .video-list .video-item .video-intro{
   margin-left: 130px;
+  color: #1a1a1a;
+
+  &:hover {
+    color: #36a737;
+  }
 }
 /* /video */
 
@@ -488,12 +491,13 @@
   margin-bottom: 40px;
 }
 .certificate-query .certificate-query-content {
-  height: 420px;
-  box-sizing: border-box;
-  background: url('../img/certificate-query-bg.png') no-repeat 0 0;
-  background-size: 100%;
-  padding: 60px 238px 0 630px;
-  background-size: cover;
+  background-color: #f3f3f3;
+  // height: 420px;
+  // box-sizing: border-box;
+  // background: url('../img/certificate-query-bg.png') no-repeat 0 0;
+  // background-size: 100%;
+  // padding: 60px 238px 0 630px;
+  // background-size: cover;
 }
 .certificate-query .certificate-query-content .title {
   font-size: 24px;
@@ -502,7 +506,7 @@
 }
 .certificate-query .certificate-query-content .certificate-input {
   display: block;
-  width: 290px;
+  width: 100%;
   line-height: 20px;
   border: 1px solid #e6e6e6;
   border-radius: 3px;
@@ -519,6 +523,56 @@
   font-size: 18px;
   border: 1px solid #36a737;
   margin-top: 40px;
+}
+
+.certificate-query-left {
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.certificate-query-form {
+  position: relative;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+.certificate-query-code {
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  text-align: center;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    bottom: 20px;
+    width: 15px;
+    background: data-uri('../img/certificate-query-spaer.png') no-repeat center center;
+  }
+}
+
+.certificate-code-item {
+  margin-bottom: 40px;
+}
+
+.certificate-code-item > img {
+  display: block;
+  margin: 0 auto 10px;
+  width: 120px;
+  height: auto;
+}
+
+.certificate-code-explain {
+  color: #666;
 }
 /* /certificate-query */
 

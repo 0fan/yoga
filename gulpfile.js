@@ -141,10 +141,10 @@ gulp.task('open', () => {
 
 /* watch */
 gulp.task('watch', () => {
-  gulp.watch('./src/less/**/*.less', ['less'])
-  gulp.watch('./src/js/**/*.js', ['jsVendor', 'js'])
-  gulp.watch(['./src/**/*.html'], ['html'])
-  gulp.watch(['./src/css/**/*.css'], ['css'])
+  gulp.watch('src/less/**/*.less', ['less'])
+  gulp.watch('src/js/**/*.js', ['jsVendor', 'js'])
+  gulp.watch(['src/**/*.html'], ['html'])
+  gulp.watch(['src/css/**/*.css'], ['css'])
 })
 
 /* default */

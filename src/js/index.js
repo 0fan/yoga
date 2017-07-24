@@ -1,3 +1,5 @@
+import './public/index'
+
 $(function() {
 
   $(document).on('click', '.course-curriculum-title .course-curriculum-item', function(e) {
