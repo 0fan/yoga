@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/vendor.css">
+  <link rel="stylesheet" href="./css/certificate-result.css">
+
+</head>
+<body>
+  @@include('header.html', { "active": 5  })
+  @@include('focus-inner.html')
+
+  <div class="info-box">
+    <div class="container">
+      <div class="info-box-title">查询证书</div>
+      <div class="info-box-sub-title">Certificate</div>
+      <div class="info-box-spacer"></div>
+      <div class="row certificate-main">
+        <div class="col-md-24">
+          <div class="certificate-title">查询结果</div>
+          <div class="certificate-result">
+            <!-- 这里放证书图片 -->
+            <img src="./img/certificate-result-temp.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('footer.html')
+</body>
+<script src="./js/vendor.js"></script>
+<script src="./js/certificate.js"></script>
+</html>
