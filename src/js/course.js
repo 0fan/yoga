@@ -1,3 +1,5 @@
+import './public/right-float'
+
 $(function() {
   $('#datetimepicker').datepicker({
     format: 'yyyy年mm月dd日',

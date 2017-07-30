@@ -1,3 +1,5 @@
+import './public/right-float'
+
 $(function() {
 
   let $preview  = $('.introduce-preview')

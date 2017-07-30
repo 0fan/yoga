@@ -1,3 +1,5 @@
+import './public/right-float'
+
 // 视频播放
 $(function() {
 

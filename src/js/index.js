@@ -1,4 +1,5 @@
 import './public/index'
+import './public/right-float'
 
 $(function() {
 

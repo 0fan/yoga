@@ -1,4 +1,4 @@
-
+import './public/right-float'
 
 $(document).on('click', '.teacher-item', (e) => {
   let $el = $(e.target)
