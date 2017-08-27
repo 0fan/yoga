@@ -1,6 +1,6 @@
 @header-height             : 120px;
 @header-logo-width         : 140px;
-@header-logo-height        : @header-height;
+@header-logo-height        : 104px;
 @header-text-font-size     : 18px;
 @header-sub-text-font-size : 14px;
 
@@ -15,7 +15,8 @@
   float: left;
   width: @header-logo-width;
   height: @header-logo-height;
-  background: data-uri('../img/logo.png') no-repeat center center;
+  margin-top: (@header-height - @header-logo-height) / 2;
+  background: data-uri('../img/logo_new.png') no-repeat center center;
   text-indent: -999em;
   margin-right: 24px;
 }
