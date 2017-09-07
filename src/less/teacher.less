@@ -53,7 +53,7 @@
 }
 
 .teacher-info {
-  padding: 10px 12px;
+  padding: 10px 0;
   height: 62px;
   background-color: #f3f3f3;
   text-align: center;
@@ -63,15 +63,24 @@
   font-size: 16px;
   color: #333;
   margin-bottom: 5px;
+  padding: 0 12px;
 
   .text-overflow();
 }
 
 .teacher-position {
+  position: relative;
   font-size: 12px;
+  padding: 0 12px 10px;
   color: #666;
+  background-color: #f3f3f3;
 
   .text-overflow();
+
+  &:hover {
+    white-space: normal;
+    z-index: 99999;
+  }
 }
 /* /teacher */
 
